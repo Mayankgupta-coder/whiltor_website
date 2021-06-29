@@ -14,6 +14,7 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form_style.css">
 
     <!-- mdbootstrap -->
     <!-- Font Awesome -->
@@ -52,45 +53,38 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</p>
 
               <p><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_a6gfcfyx.json"  background="transparent"  speed="1.5"  style="width: auto; height: 300px;"  loop autoplay></lottie-player></p>
+                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_a6gfcfyx.json"  background="transparent"  speed="1.5"  style="width: auto; height: 600px; margin-right:20%;"  loop autoplay></lottie-player></p>
                   
 
             </div>
             <div class="col-md-6">
               
-              <form class="mb-5" method="post" id="contactForm" name="contactForm">
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
-                  </div>
-                </div>  
-                <div class="row">
-                  <div class="col-12">
-                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
-                  <span class="submitting"></span>
-                  </div>
-                </div>
-              </form>
-
-              <div id="form-message-warning mt-4"></div> 
-              <div id="form-message-success">
-                Your message was sent, thank you!
+              <div class="container" id="form">  
+                <form id="contact" action="" method="post">
+                  <h3>Colorlib Contact Form</h3>
+                  <h4>Contact us for custom quote</h4>
+                  <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                  </fieldset>
+                  <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                  </fieldset>
+                  <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                  </fieldset>
+                  <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+                </form>
               </div>
+              
             </div>
           </div>
         </div>
