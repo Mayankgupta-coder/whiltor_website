@@ -156,6 +156,6 @@ fieldset {
 @media only screen and (max-width: 575px) {
   #form
   {
-    margin-top:-70%;
+    margin-top:-60%;
   }
 }
